@@ -1,0 +1,7 @@
+{
+  "name": "lenguajeV",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
