@@ -1,0 +1,33 @@
+<ion-content class="ion-padding">
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <h1>Inicio de Sesion</h1>
+        <form (ngSubmit)="logIn()" [formGroup]="iniciarUsuario">
+              
+          <ion-item>
+            <ion-label>Correo Electonico</ion-label>
+            <ion-input type="text" formControlName="email"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Clave de Usuario</ion-label>
+            <ion-input type="text" formControlName="password"></ion-input>
+          </ion-item>
+
+          <div>
+            <p>{{errorMessage}}</p>
+          </div>
+
+          <ion-item>
+            <ion-button [disabled]="iniciarUsuario.invalid" type="submit">Iniciar Sesion</ion-button>
+          </ion-item>
+
+        </form>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+</ion-content>

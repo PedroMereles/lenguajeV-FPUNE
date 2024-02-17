@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "lenguajev-a1488": {
+      "hosting": {
+        "app": [
+          "lenguajev-a1488"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "lenguajev-a1488"
+  }
+}

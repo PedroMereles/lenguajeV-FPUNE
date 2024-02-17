@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Auth, signOut } from '@angular/fire/auth';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,18 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+  constructor(
+    private auth: Auth,
+    private router: Router,
+  ) {}
+
+  logOut = () => {
+    signOut(this.auth).then(() => {
+      // Sign-out successful.
+      this.router.navigate(['/login']);
+    }).catch((error) => {
+      // An error happened.
+    });
+  }
+
 }

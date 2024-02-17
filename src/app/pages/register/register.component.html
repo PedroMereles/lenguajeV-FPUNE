@@ -1,0 +1,33 @@
+<ion-content class="ion-padding">
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <h1>REGISTER</h1>
+        <form (ngSubmit)="registrar()" [formGroup]="registrarUsuario">
+          <ion-item>
+            <ion-label>Nombre</ion-label>
+            <ion-input type="text" formControlName="name"></ion-input>
+          </ion-item>
+          
+          <ion-item>
+            <ion-label>Correo Electonico</ion-label>
+            <ion-input type="text" formControlName="email"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Clave de Usuario</ion-label>
+            <ion-input type="text" formControlName="password"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-button [disabled]="registrarUsuario.invalid" type="submit">Registrar</ion-button>
+          </ion-item>
+
+        </form>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+</ion-content>

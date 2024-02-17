@@ -1,16 +1,34 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './pages/home/home.component';
+import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
 
 const routes: Routes = [
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    component: HomeComponent
   },
   {
+    path: 'login',
+    component: LoginComponent
+  },
+  {
+    path: 'register',
+    component: RegisterComponent
+  },
+  {
+    //Redirecciona a HOME cuando no tiene una direccion especifica en el link
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'login',
+    pathMatch: 'full'
+  },{
+    path: '**',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
+  
+  
 ];
 
 @NgModule({
