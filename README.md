@@ -1,4 +1,4 @@
-#Registro y Login
+# Registro y Login
 Proyecto basico creado para demostracion de Login/Registro utilizando FIREBASE e IONIC a los Alumnos del  septimo semestre
 
 
