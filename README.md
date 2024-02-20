@@ -1,6 +1,7 @@
-# Registro y Login
-Proyecto basico creado para demostracion de Login/Registro utilizando FIREBASE e IONIC a los Alumnos del  septimo semestre
+# Registro, Login y Recuperar clave
+Proyecto basico creado para demostracion de Login,Registro y Recuperar Clave utilizando FIREBASE e IONIC a los Alumnos del  septimo semestre
 
+Este documento se ira actualizando de acuerdo a lo desarrollado en las clases
 
 ## Comandos Ejecutados en Terminal  
 *   npm install -g @angular/cli
@@ -15,6 +16,7 @@ Proyecto basico creado para demostracion de Login/Registro utilizando FIREBASE e
 *  ng g c pages/login
 *  ng g c pages/register
 *  ng g c pages/home
+*  ng g c pages/forgot-password
 *  ng g m pages
 
 ---------------------
