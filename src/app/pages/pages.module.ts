@@ -5,6 +5,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 
 
 
@@ -12,12 +13,14 @@ import { RegisterComponent } from './register/register.component';
   declarations: [
     HomeComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    ForgotPasswordComponent,
+
   ],
   imports: [
     CommonModule,
     IonicModule, 
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ]
 })
 export class PagesModule { }
